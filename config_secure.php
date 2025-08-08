@@ -3,28 +3,27 @@
 require_once 'env_loader.php';
 
 // Database configuration from environment variables
-define('DB_HOST', env('DB_HOST', 'localhost'));
-define('DB_NAME', env('DB_NAME', 'u990109832_coprra'));
-define('DB_USER', env('DB_USER', 'u990109832_gasser'));
-define('DB_PASS', env('DB_PASS', 'Hamo1510@Rayan146'));
+define('DB_HOST', env('DB_HOST', '127.0.0.1'));
+define('DB_NAME', env('DB_NAME'));
+define('DB_USER', env('DB_USER'));
+define('DB_PASS', env('DB_PASS'));
 
 // JWT Secret Key from environment variables
-define('JWT_SECRET', env('JWT_SECRET', 'default-secret-key-change-in-production'));
+define('JWT_SECRET', env('JWT_SECRET'));
 
 // OAuth configuration from environment variables
-define('GOOGLE_CLIENT_ID', env('GOOGLE_CLIENT_ID', ''));
-define('GOOGLE_CLIENT_ID', env('GOOGLE_CLIENT_ID', ''));
-define('GOOGLE_CLIENT_SECRET', env('GOOGLE_CLIENT_SECRET', ''));
-define('GOOGLE_REDIRECT_URI', env('GOOGLE_REDIRECT_URI', ''));
+define('GOOGLE_CLIENT_ID', env('GOOGLE_CLIENT_ID'));
+define('GOOGLE_CLIENT_SECRET', env('GOOGLE_CLIENT_SECRET'));
+define('GOOGLE_REDIRECT_URI', env('GOOGLE_REDIRECT_URI'));
 
-define('FACEBOOK_APP_ID', env('FACEBOOK_APP_ID', ''));
-define('FACEBOOK_APP_SECRET', env('FACEBOOK_APP_SECRET', ''));
-define('FACEBOOK_REDIRECT_URI', env('FACEBOOK_REDIRECT_URI', ''));
+define('FACEBOOK_APP_ID', env('FACEBOOK_APP_ID'));
+define('FACEBOOK_APP_SECRET', env('FACEBOOK_APP_SECRET'));
+define('FACEBOOK_REDIRECT_URI', env('FACEBOOK_REDIRECT_URI'));
 
 // Application settings
 define('APP_ENV', env('APP_ENV', 'production'));
 define('APP_DEBUG', env('APP_DEBUG', false));
-define('APP_URL', env('APP_URL', 'https://coprra.com'));
+define('APP_URL', env('APP_URL', 'http://localhost'));
 
 // CORS headers for React frontend
 header('Access-Control-Allow-Origin: *');
